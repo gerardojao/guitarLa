@@ -1,13 +1,9 @@
 
 export default function Guitar({guitar, setCart, addToCart}) {
     const {id, name, image, price, description} = guitar;
-    
-    const HandleClick = () => {
-        console.log(`Agregar al carrito: ${name}`);
-        
-    }
+
     return (
-    <div className="row mt-5">                
+               
             <div id = {id} className="col-md-6 col-lg-4 my-4 row align-items-center">
                 <div className="col-4">
                     <img className="img-fluid" src={`/img/${image}.jpg`} alt={` guitarra ${name}`} />
@@ -23,6 +19,6 @@ export default function Guitar({guitar, setCart, addToCart}) {
                     >Agregar al Carrito</button>
                 </div>
             </div>
-    </div>
+   
   );
 }
